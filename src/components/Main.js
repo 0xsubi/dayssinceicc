@@ -1,8 +1,7 @@
 import React from "react"
-import { Button, Typography } from '@cred/neopop-web/lib/components';
-import { FontVariant } from '@cred/neopop-web/lib/primitives';
+import { Button } from '@cred/neopop-web/lib/components';
 import track from './audio/pal_do_pal_ka_shayar.wav';
-import Odometer from 'react-odometerjs';
+import DigitRoll from 'digit-roll-react'
 
 function Main() {
     const [audio] = React.useState(new Audio(track))
@@ -20,26 +19,20 @@ function Main() {
         return () => {
             audio.removeEventListener("ended", () => setPlaying(false))
         }
-    })
+    }, [])
 
     let daysSince = () => {
         let lastIccDay = new Date("06/23/2013")
         let today = new Date()
         let nowMillis = today.getTime()
-        return (nowMillis - lastIccDay.getTime()) / (1000 * 3600 * 24)
+        return  Math.floor((nowMillis - lastIccDay.getTime()) / (1000 * 3600 * 24))
     }
 
     return (
         <div className="main">
             <div className="main-text">
                 <h3>Days since India's last Men's ICC Trophy </h3>
-                <Odometer 
-                    className="day-counter" 
-                    value={Math.floor(daysSince())} 
-                    format="" 
-                    animation='count'
-                    duration={2000}
-                    />
+                <DigitRoll num={daysSince()} length={4} divider="" delay={5} />
             </div>
             <Button
             className="thala-remember"

@@ -59,7 +59,6 @@ body {
   opacity: 0.8;
   border-radius: 20px;
   padding: 20px;
-  display: block;
   justify-content: center;
   align-items: center;
   /* position: absolute; */
@@ -80,4 +79,9 @@ body {
 .thala-remember {
   font-family: 'Righteous', cursive;
   margin-top: 50px;
+}
+
+.DigitRoll {
+  width: 27%;
+  margin: 0 auto;
 }
