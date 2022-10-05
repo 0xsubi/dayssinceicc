@@ -37,7 +37,6 @@ function Main() {
                     className="day-counter" 
                     value={Math.floor(daysSince())} 
                     format="" 
-                    theme="car"
                     animation='count'
                     duration={2000}
                     />
