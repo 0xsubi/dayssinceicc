@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
 
+import Main from "./components/Main"
+
 function App() {
+  let daysSince = () => {
+    let lastIccDay = new Date("06/23/2013")
+    let today = new Date()
+    let nowMillis = today.getTime()
+    return (nowMillis - lastIccDay.getTime()) / (1000 * 3600 * 24)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Main />
     </div>
   );
 }
