@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/dayssiceicc/static/css/main.8ef96159.css",
+    "main.js": "/dayssiceicc/static/js/main.710f5932.js",
+    "static/js/787.708e4a33.chunk.js": "/dayssiceicc/static/js/787.708e4a33.chunk.js",
+    "static/media/pal_do_pal_ka_shayar.wav": "/dayssiceicc/static/media/pal_do_pal_ka_shayar.93df7b350399739e3e1c.wav",
+    "static/media/champions.webp": "/dayssiceicc/static/media/champions.a08a6d51b85ef03b7341.webp",
+    "index.html": "/dayssiceicc/index.html",
+    "main.8ef96159.css.map": "/dayssiceicc/static/css/main.8ef96159.css.map",
+    "main.710f5932.js.map": "/dayssiceicc/static/js/main.710f5932.js.map",
+    "787.708e4a33.chunk.js.map": "/dayssiceicc/static/js/787.708e4a33.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ef96159.css",
+    "static/js/main.710f5932.js"
+  ]
+}
